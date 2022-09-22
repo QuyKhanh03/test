@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+body {
+    height: 1000vh;
+    background-color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .8s;
+    padding: 30px 200px;
+    z-index: 100000;
+}
+header .logo {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase; 
+    /* chữ hoa */
+    letter-spacing: 2px;
+    /* khoảng cách giữa các chữ */
+    transition: .8s;
+    color: #fff;
+}
+header .nav_position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav_position a {
+    text-decoration: none;
+    /* color: #000; */
+    color: #fff;
+    padding: 0 25px;
+    letter-spacing: 2px;
+    transition: .8s;
+    font-weight: 500;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+}
+header.sticky {
+    background-color: aliceblue;
+}
+header.sticky a {
+    color: #000;
+}
